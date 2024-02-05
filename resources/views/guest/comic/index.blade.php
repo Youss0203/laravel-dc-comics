@@ -4,7 +4,8 @@
 
 
     <section class="comics">
-            <div class=" col-4">
+        <div class="row">
+            <div class="col-4">
                 @foreach ($comics as $comic)
                 <div class="card" style="width: 18rem;">
                     <img  src="{{ $comic['thumb'] }}" alt="">
@@ -12,6 +13,7 @@
                 </div>
                 @endforeach
             </div>
+        </div>
 
     </section>
 

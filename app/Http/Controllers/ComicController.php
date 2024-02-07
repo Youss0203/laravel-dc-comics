@@ -47,5 +47,13 @@ class ComicController extends Controller
         $comic = Comic::findOrFail($id);
         return view('guest.comic.edit', compact('comic'));
     }
+    public function update(request $request , string $id){
+
+        $data=$request->all();
+        $comic = Comic::findOrFail($id);
+        $comic -> update($data);
+        return redirect()->route('guest.comic.show', $comic->id);
+
+    }
 
 }

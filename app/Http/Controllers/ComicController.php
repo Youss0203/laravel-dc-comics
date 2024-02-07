@@ -41,10 +41,11 @@ class ComicController extends Controller
         $newComic->thumb = $newComicData['thumb'];
         $newComic->save();
         return redirect()->route('guest.comic.show', $newComic->id);
-        
-
-
-
+    }
+    public function edit(string $id)
+    {
+        $comic = Comic::findOrFail($id);
+        return view('guest.comic.edit', compact('comic'));
     }
 
 }

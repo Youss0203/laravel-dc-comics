@@ -10,7 +10,6 @@
             <div class="img-box">
                 <img src="{{ $comic->thumb }}" alt="">
                 <div class="type">{{ $comic->type }}</div>
-                <div class="gallery">View Gallery</div>
             </div>
         </div>
     </div>
@@ -22,11 +21,6 @@
                 <div class="available-wrapper">
                     <div class="price-wrapper">
                         <span>U.S Price: <span class="price">{{ $comic->price }}</span></span>
-                        <span class="available">Available</span>
-                    </div>
-                    <div class="check-avalable">
-                        Check Availability
-                        <i class="fa-solid fa-sort-down"></i>
                     </div>
                 </div>
                 <p>{{ $comic->description }}</p>
@@ -37,7 +31,6 @@
     <div class="comic-description">
         <div class="wrapper">
             <div class="specs">
-                <h2>Specs</h2>
 
                 <div class="series">
                     <span>Series: </span>

@@ -47,10 +47,7 @@
                     <span>U.S Price: </span>
                     <span>{{ $comic->price }}</span>
                 </div>
-                <div class="sale-date">
-                    <span>On Sale Date: </span>
-                    <span>{{ $comic->sale_date }}</span>
-                </div>
+
             </div>
         </div>
     </div>
